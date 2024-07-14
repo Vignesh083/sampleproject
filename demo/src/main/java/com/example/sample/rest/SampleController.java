@@ -32,6 +32,7 @@ public class SampleController {
 		public ResponseEntity<Optional<SampleModel>> getPerson(@PathVariable Long id) {
 			Optional<SampleModel> person = sampleService.getPersonById(id);
 			return ResponseEntity.ok(person);
+			
 		}
 
 }
